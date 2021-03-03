@@ -1,0 +1,823 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0454A19B25EA2AA300C625F0 /* Theme8WalkThroughViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0454A19925EA2AA300C625F0 /* Theme8WalkThroughViewController.swift */; };
+		0454A19C25EA2AA300C625F0 /* Theme8WalkThroughViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0454A19A25EA2AA300C625F0 /* Theme8WalkThroughViewController.xib */; };
+		045703CB25E9557C0098C7A5 /* Theme12SignUpViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 045703C925E9557C0098C7A5 /* Theme12SignUpViewController.xib */; };
+		045703CC25E9557C0098C7A5 /* Theme12SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045703CA25E9557C0098C7A5 /* Theme12SignUpViewController.swift */; };
+		045703CE25E955A00098C7A5 /* SingupController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045703CD25E955A00098C7A5 /* SingupController.swift */; };
+		045703D025E9606A0098C7A5 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 045703CF25E9606A0098C7A5 /* GoogleService-Info.plist */; };
+		10DB4961A6E7AA4609523E2D /* Pods_CollageMaker.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A40EF78134D1354D63E20DAC /* Pods_CollageMaker.framework */; };
+		2843A62725EEC41A000C5B90 /* A4WPurchaseViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2843A62425EEC41A000C5B90 /* A4WPurchaseViewController.xib */; };
+		2843A62825EEC41A000C5B90 /* A4WPurchaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2843A62525EEC41A000C5B90 /* A4WPurchaseManager.swift */; };
+		2843A62925EEC41A000C5B90 /* A4WPurchaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2843A62625EEC41A000C5B90 /* A4WPurchaseViewController.swift */; };
+		311A54392343450200DD19F3 /* Global.swift in Sources */ = {isa = PBXBuildFile; fileRef = 311A54362343450200DD19F3 /* Global.swift */; };
+		311A543A2343450200DD19F3 /* Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 311A54372343450200DD19F3 /* Helpers.swift */; };
+		311A543B2343450200DD19F3 /* SwiftyTimer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 311A54382343450200DD19F3 /* SwiftyTimer.swift */; };
+		88D17DCA2336440C00268E37 /* PresentPhotoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88D17DC92336440C00268E37 /* PresentPhotoVC.swift */; };
+		88DC7E0E2334D657006F3529 /* MyAlbumVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88DC7E0C2334D657006F3529 /* MyAlbumVC.swift */; };
+		88DC7E0F2334D657006F3529 /* ShareVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88DC7E0D2334D657006F3529 /* ShareVC.swift */; };
+		88EC34A6232F540C0022014C /* PentagonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88EC34A5232F540C0022014C /* PentagonView.swift */; };
+		88ECD34C233CDA5400A8712E /* EditImageVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88ECD34B233CDA5400A8712E /* EditImageVC.swift */; };
+		88ED108D2333665D00AC149D /* PresentTextVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88ED108C2333665D00AC149D /* PresentTextVC.swift */; };
+		88ED1093233366AD00AC149D /* Filters.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88ED108F233366AD00AC149D /* Filters.swift */; };
+		88ED10A823336D2300AC149D /* StickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88ED109823336D2300AC149D /* StickerView.swift */; };
+		88ED10A923336D2300AC149D /* JLStickerImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88ED109A23336D2300AC149D /* JLStickerImageView.swift */; };
+		88ED10AA23336D2300AC149D /* JLStickerLabelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88ED109B23336D2300AC149D /* JLStickerLabelView.swift */; };
+		88ED10AB23336D2300AC149D /* JLAttributedTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88ED109C23336D2300AC149D /* JLAttributedTextView.swift */; };
+		88ED10AC23336D2300AC149D /* CalcuteFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88ED109D23336D2300AC149D /* CalcuteFunctions.swift */; };
+		88ED10AD23336D2300AC149D /* adjustToFitFontOrWidth.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88ED109E23336D2300AC149D /* adjustToFitFontOrWidth.swift */; };
+		88ED10AE23336D2300AC149D /* PressButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 88ED10A023336D2300AC149D /* PressButton.m */; };
+		88ED10AF23336D2300AC149D /* SelectionButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 88ED10A123336D2300AC149D /* SelectionButton.m */; };
+		88ED10B023336D2300AC149D /* FamButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 88ED10A223336D2300AC149D /* FamButton.m */; };
+		88ED10B123336D2300AC149D /* MagnificationButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 88ED10A623336D2300AC149D /* MagnificationButton.m */; };
+		88ED10D423336D3600AC149D /* Adine Kirnberg.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 88ED10B423336D3600AC149D /* Adine Kirnberg.ttf */; };
+		88ED10D523336D3600AC149D /* champignonaltswash.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 88ED10B523336D3600AC149D /* champignonaltswash.ttf */; };
+		88ED10D623336D3600AC149D /* Advertising Script Monoline Trial.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 88ED10B623336D3600AC149D /* Advertising Script Monoline Trial.ttf */; };
+		88ED10D723336D3600AC149D /* AguafinaScript-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 88ED10B723336D3600AC149D /* AguafinaScript-Regular.ttf */; };
+		88ED10D823336D3600AC149D /* Allura-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 88ED10B823336D3600AC149D /* Allura-Regular.ttf */; };
+		88ED10D923336D3600AC149D /* Script Writing.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 88ED10B923336D3600AC149D /* Script Writing.ttf */; };
+		88ED10DA23336D3600AC149D /* waltograph42.otf in Resources */ = {isa = PBXBuildFile; fileRef = 88ED10BA23336D3600AC149D /* waltograph42.otf */; };
+		88ED10DB23336D3600AC149D /* AlexBrush-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 88ED10BB23336D3600AC149D /* AlexBrush-Regular.ttf */; };
+		88ED10DC23336D3600AC149D /* akaDora.otf in Resources */ = {isa = PBXBuildFile; fileRef = 88ED10BC23336D3600AC149D /* akaDora.otf */; };
+		88ED10DD23336D3600AC149D /* Bucanera-font-FFP.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 88ED10BD23336D3600AC149D /* Bucanera-font-FFP.ttf */; };
+		88ED10DE23336D3600AC149D /* Serling Script Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 88ED10BE23336D3600AC149D /* Serling Script Regular.otf */; };
+		88ED10DF23336D3600AC149D /* QUIGLEYW.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 88ED10BF23336D3600AC149D /* QUIGLEYW.ttf */; };
+		88ED10E023336D3600AC149D /* VTC-BadTattooHandOne.otf in Resources */ = {isa = PBXBuildFile; fileRef = 88ED10C023336D3600AC149D /* VTC-BadTattooHandOne.otf */; };
+		88ED10E123336D3600AC149D /* Granada Blues Personal Use.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 88ED10C123336D3600AC149D /* Granada Blues Personal Use.ttf */; };
+		88ED10E223336D3600AC149D /* Ginga.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 88ED10C223336D3600AC149D /* Ginga.ttf */; };
+		88ED10E323336D3600AC149D /* LittleLordFontleroyNF.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 88ED10C323336D3600AC149D /* LittleLordFontleroyNF.ttf */; };
+		88ED10E423336D3600AC149D /* The Heart of Everything Demo.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 88ED10C423336D3600AC149D /* The Heart of Everything Demo.ttf */; };
+		88ED10E523336D3600AC149D /* Playball-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 88ED10C523336D3600AC149D /* Playball-Regular.ttf */; };
+		88ED10E623336D3600AC149D /* Mf Gradient Goddess.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 88ED10C623336D3600AC149D /* Mf Gradient Goddess.ttf */; };
+		88ED10E723336D3600AC149D /* Dohearts.otf in Resources */ = {isa = PBXBuildFile; fileRef = 88ED10C723336D3600AC149D /* Dohearts.otf */; };
+		88ED10E823336D3600AC149D /* PlumScript.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 88ED10C823336D3600AC149D /* PlumScript.ttf */; };
+		88ED10E923336D3600AC149D /* Variane Script.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 88ED10C923336D3600AC149D /* Variane Script.ttf */; };
+		88ED10EA23336D3600AC149D /* Alleana Script.otf in Resources */ = {isa = PBXBuildFile; fileRef = 88ED10CA23336D3600AC149D /* Alleana Script.otf */; };
+		88ED10EB23336D3600AC149D /* Arizonia-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 88ED10CB23336D3600AC149D /* Arizonia-Regular.ttf */; };
+		88ED10EC23336D3600AC149D /* Enjoy Personal Use.otf in Resources */ = {isa = PBXBuildFile; fileRef = 88ED10CC23336D3600AC149D /* Enjoy Personal Use.otf */; };
+		88ED10ED23336D3600AC149D /* VTKS SummerLAnd.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 88ED10CD23336D3600AC149D /* VTKS SummerLAnd.ttf */; };
+		88ED10EE23336D3600AC149D /* alsscrp.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 88ED10CE23336D3600AC149D /* alsscrp.ttf */; };
+		88ED10EF23336D3600AC149D /* Montez-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 88ED10CF23336D3600AC149D /* Montez-Regular.ttf */; };
+		88ED10F023336D3600AC149D /* Advertising Script Bold Trial.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 88ED10D023336D3600AC149D /* Advertising Script Bold Trial.ttf */; };
+		88ED10F123336D3600AC149D /* Pretty Girls Script Demo.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 88ED10D123336D3600AC149D /* Pretty Girls Script Demo.ttf */; };
+		88ED10F223336D3600AC149D /* a Theme for murder.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 88ED10D223336D3600AC149D /* a Theme for murder.ttf */; };
+		88ED10F323336D3600AC149D /* Miama.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 88ED10D323336D3600AC149D /* Miama.ttf */; };
+		88ED10F723336D4400AC149D /* tblStyleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88ED10F523336D4400AC149D /* tblStyleCell.swift */; };
+		88ED10F823336D4400AC149D /* tblStyleCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 88ED10F623336D4400AC149D /* tblStyleCell.xib */; };
+		88ED10FC23336FC500AC149D /* LoadShapesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88ED10FB23336FC500AC149D /* LoadShapesVC.swift */; };
+		88ED10FF233382D600AC149D /* SelectItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88ED10FD233382D600AC149D /* SelectItemCell.swift */; };
+		88ED1100233382D600AC149D /* SelectItemCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 88ED10FE233382D600AC149D /* SelectItemCell.xib */; };
+		88ED1105233382EF00AC149D /* FramesCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88ED1101233382EF00AC149D /* FramesCell.swift */; };
+		88ED1106233382EF00AC149D /* FramesCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 88ED1102233382EF00AC149D /* FramesCell.xib */; };
+		88ED1107233382EF00AC149D /* FilterCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88ED1103233382EF00AC149D /* FilterCell.swift */; };
+		88ED1108233382EF00AC149D /* FilterCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 88ED1104233382EF00AC149D /* FilterCell.xib */; };
+		88ED110A2333853700AC149D /* StickersVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88ED11092333853700AC149D /* StickersVC.swift */; };
+		88ED110D233385BF00AC149D /* StickerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88ED110B233385BF00AC149D /* StickerCell.swift */; };
+		88ED110E233385BF00AC149D /* StickerCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 88ED110C233385BF00AC149D /* StickerCell.xib */; };
+		88ED11112333863400AC149D /* MainStickerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88ED110F2333863400AC149D /* MainStickerCell.swift */; };
+		88ED11122333863400AC149D /* MainStickerCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 88ED11102333863400AC149D /* MainStickerCell.xib */; };
+		88ED11152333910600AC149D /* allFramesCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88ED11132333910600AC149D /* allFramesCell.swift */; };
+		88ED11162333910600AC149D /* allFramesCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 88ED11142333910600AC149D /* allFramesCell.xib */; };
+		88EE7017232BA87800F5282A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88EE7016232BA87800F5282A /* AppDelegate.swift */; };
+		88EE7019232BA87800F5282A /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88EE7018232BA87800F5282A /* HomeVC.swift */; };
+		88EE701C232BA87800F5282A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 88EE701A232BA87800F5282A /* Main.storyboard */; };
+		88EE701E232BA87800F5282A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 88EE701D232BA87800F5282A /* Assets.xcassets */; };
+		88EE7021232BA87800F5282A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 88EE701F232BA87800F5282A /* LaunchScreen.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		0454A19925EA2AA300C625F0 /* Theme8WalkThroughViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Theme8WalkThroughViewController.swift; sourceTree = "<group>"; };
+		0454A19A25EA2AA300C625F0 /* Theme8WalkThroughViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Theme8WalkThroughViewController.xib; sourceTree = "<group>"; };
+		045703C925E9557C0098C7A5 /* Theme12SignUpViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Theme12SignUpViewController.xib; sourceTree = "<group>"; };
+		045703CA25E9557C0098C7A5 /* Theme12SignUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Theme12SignUpViewController.swift; sourceTree = "<group>"; };
+		045703CD25E955A00098C7A5 /* SingupController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingupController.swift; sourceTree = "<group>"; };
+		045703CF25E9606A0098C7A5 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		0FE3C98E9AF2E406AEDBE250 /* Pods-CollageMaker.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CollageMaker.debug.xcconfig"; path = "Target Support Files/Pods-CollageMaker/Pods-CollageMaker.debug.xcconfig"; sourceTree = "<group>"; };
+		2843A62425EEC41A000C5B90 /* A4WPurchaseViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = A4WPurchaseViewController.xib; sourceTree = "<group>"; };
+		2843A62525EEC41A000C5B90 /* A4WPurchaseManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = A4WPurchaseManager.swift; sourceTree = "<group>"; };
+		2843A62625EEC41A000C5B90 /* A4WPurchaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = A4WPurchaseViewController.swift; sourceTree = "<group>"; };
+		311A54362343450200DD19F3 /* Global.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Global.swift; sourceTree = "<group>"; };
+		311A54372343450200DD19F3 /* Helpers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Helpers.swift; sourceTree = "<group>"; };
+		311A54382343450200DD19F3 /* SwiftyTimer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftyTimer.swift; sourceTree = "<group>"; };
+		88D17DC92336440C00268E37 /* PresentPhotoVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PresentPhotoVC.swift; sourceTree = "<group>"; };
+		88DC7E0C2334D657006F3529 /* MyAlbumVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyAlbumVC.swift; sourceTree = "<group>"; };
+		88DC7E0D2334D657006F3529 /* ShareVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShareVC.swift; sourceTree = "<group>"; };
+		88EBE5F1232CCBF7006872EA /* Collage.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Collage.h; sourceTree = "<group>"; };
+		88EC34A5232F540C0022014C /* PentagonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PentagonView.swift; sourceTree = "<group>"; };
+		88ECD34B233CDA5400A8712E /* EditImageVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditImageVC.swift; sourceTree = "<group>"; };
+		88ED108C2333665D00AC149D /* PresentTextVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PresentTextVC.swift; sourceTree = "<group>"; };
+		88ED108F233366AD00AC149D /* Filters.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Filters.swift; sourceTree = "<group>"; };
+		88ED109823336D2300AC149D /* StickerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StickerView.swift; sourceTree = "<group>"; };
+		88ED109A23336D2300AC149D /* JLStickerImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JLStickerImageView.swift; sourceTree = "<group>"; };
+		88ED109B23336D2300AC149D /* JLStickerLabelView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JLStickerLabelView.swift; sourceTree = "<group>"; };
+		88ED109C23336D2300AC149D /* JLAttributedTextView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JLAttributedTextView.swift; sourceTree = "<group>"; };
+		88ED109D23336D2300AC149D /* CalcuteFunctions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalcuteFunctions.swift; sourceTree = "<group>"; };
+		88ED109E23336D2300AC149D /* adjustToFitFontOrWidth.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = adjustToFitFontOrWidth.swift; sourceTree = "<group>"; };
+		88ED10A023336D2300AC149D /* PressButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PressButton.m; sourceTree = "<group>"; };
+		88ED10A123336D2300AC149D /* SelectionButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SelectionButton.m; sourceTree = "<group>"; };
+		88ED10A223336D2300AC149D /* FamButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FamButton.m; sourceTree = "<group>"; };
+		88ED10A323336D2300AC149D /* MagnificationButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MagnificationButton.h; sourceTree = "<group>"; };
+		88ED10A423336D2300AC149D /* SelectionButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SelectionButton.h; sourceTree = "<group>"; };
+		88ED10A523336D2300AC149D /* PressButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PressButton.h; sourceTree = "<group>"; };
+		88ED10A623336D2300AC149D /* MagnificationButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MagnificationButton.m; sourceTree = "<group>"; };
+		88ED10A723336D2300AC149D /* FamButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FamButton.h; sourceTree = "<group>"; };
+		88ED10B423336D3600AC149D /* Adine Kirnberg.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Adine Kirnberg.ttf"; sourceTree = "<group>"; };
+		88ED10B523336D3600AC149D /* champignonaltswash.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = champignonaltswash.ttf; sourceTree = "<group>"; };
+		88ED10B623336D3600AC149D /* Advertising Script Monoline Trial.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Advertising Script Monoline Trial.ttf"; sourceTree = "<group>"; };
+		88ED10B723336D3600AC149D /* AguafinaScript-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "AguafinaScript-Regular.ttf"; sourceTree = "<group>"; };
+		88ED10B823336D3600AC149D /* Allura-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Allura-Regular.ttf"; sourceTree = "<group>"; };
+		88ED10B923336D3600AC149D /* Script Writing.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Script Writing.ttf"; sourceTree = "<group>"; };
+		88ED10BA23336D3600AC149D /* waltograph42.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = waltograph42.otf; sourceTree = "<group>"; };
+		88ED10BB23336D3600AC149D /* AlexBrush-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "AlexBrush-Regular.ttf"; sourceTree = "<group>"; };
+		88ED10BC23336D3600AC149D /* akaDora.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = akaDora.otf; sourceTree = "<group>"; };
+		88ED10BD23336D3600AC149D /* Bucanera-font-FFP.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Bucanera-font-FFP.ttf"; sourceTree = "<group>"; };
+		88ED10BE23336D3600AC149D /* Serling Script Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Serling Script Regular.otf"; sourceTree = "<group>"; };
+		88ED10BF23336D3600AC149D /* QUIGLEYW.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = QUIGLEYW.ttf; sourceTree = "<group>"; };
+		88ED10C023336D3600AC149D /* VTC-BadTattooHandOne.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "VTC-BadTattooHandOne.otf"; sourceTree = "<group>"; };
+		88ED10C123336D3600AC149D /* Granada Blues Personal Use.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Granada Blues Personal Use.ttf"; sourceTree = "<group>"; };
+		88ED10C223336D3600AC149D /* Ginga.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Ginga.ttf; sourceTree = "<group>"; };
+		88ED10C323336D3600AC149D /* LittleLordFontleroyNF.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = LittleLordFontleroyNF.ttf; sourceTree = "<group>"; };
+		88ED10C423336D3600AC149D /* The Heart of Everything Demo.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "The Heart of Everything Demo.ttf"; sourceTree = "<group>"; };
+		88ED10C523336D3600AC149D /* Playball-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Playball-Regular.ttf"; sourceTree = "<group>"; };
+		88ED10C623336D3600AC149D /* Mf Gradient Goddess.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Mf Gradient Goddess.ttf"; sourceTree = "<group>"; };
+		88ED10C723336D3600AC149D /* Dohearts.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Dohearts.otf; sourceTree = "<group>"; };
+		88ED10C823336D3600AC149D /* PlumScript.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = PlumScript.ttf; sourceTree = "<group>"; };
+		88ED10C923336D3600AC149D /* Variane Script.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Variane Script.ttf"; sourceTree = "<group>"; };
+		88ED10CA23336D3600AC149D /* Alleana Script.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Alleana Script.otf"; sourceTree = "<group>"; };
+		88ED10CB23336D3600AC149D /* Arizonia-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Arizonia-Regular.ttf"; sourceTree = "<group>"; };
+		88ED10CC23336D3600AC149D /* Enjoy Personal Use.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Enjoy Personal Use.otf"; sourceTree = "<group>"; };
+		88ED10CD23336D3600AC149D /* VTKS SummerLAnd.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "VTKS SummerLAnd.ttf"; sourceTree = "<group>"; };
+		88ED10CE23336D3600AC149D /* alsscrp.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = alsscrp.ttf; sourceTree = "<group>"; };
+		88ED10CF23336D3600AC149D /* Montez-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montez-Regular.ttf"; sourceTree = "<group>"; };
+		88ED10D023336D3600AC149D /* Advertising Script Bold Trial.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Advertising Script Bold Trial.ttf"; sourceTree = "<group>"; };
+		88ED10D123336D3600AC149D /* Pretty Girls Script Demo.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pretty Girls Script Demo.ttf"; sourceTree = "<group>"; };
+		88ED10D223336D3600AC149D /* a Theme for murder.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "a Theme for murder.ttf"; sourceTree = "<group>"; };
+		88ED10D323336D3600AC149D /* Miama.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Miama.ttf; sourceTree = "<group>"; };
+		88ED10F523336D4400AC149D /* tblStyleCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = tblStyleCell.swift; sourceTree = "<group>"; };
+		88ED10F623336D4400AC149D /* tblStyleCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = tblStyleCell.xib; sourceTree = "<group>"; };
+		88ED10FB23336FC500AC149D /* LoadShapesVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadShapesVC.swift; sourceTree = "<group>"; };
+		88ED10FD233382D600AC149D /* SelectItemCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelectItemCell.swift; sourceTree = "<group>"; };
+		88ED10FE233382D600AC149D /* SelectItemCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SelectItemCell.xib; sourceTree = "<group>"; };
+		88ED1101233382EF00AC149D /* FramesCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FramesCell.swift; sourceTree = "<group>"; };
+		88ED1102233382EF00AC149D /* FramesCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FramesCell.xib; sourceTree = "<group>"; };
+		88ED1103233382EF00AC149D /* FilterCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FilterCell.swift; sourceTree = "<group>"; };
+		88ED1104233382EF00AC149D /* FilterCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FilterCell.xib; sourceTree = "<group>"; };
+		88ED11092333853700AC149D /* StickersVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StickersVC.swift; sourceTree = "<group>"; };
+		88ED110B233385BF00AC149D /* StickerCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StickerCell.swift; sourceTree = "<group>"; };
+		88ED110C233385BF00AC149D /* StickerCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = StickerCell.xib; sourceTree = "<group>"; };
+		88ED110F2333863400AC149D /* MainStickerCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainStickerCell.swift; sourceTree = "<group>"; };
+		88ED11102333863400AC149D /* MainStickerCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainStickerCell.xib; sourceTree = "<group>"; };
+		88ED11132333910600AC149D /* allFramesCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = allFramesCell.swift; sourceTree = "<group>"; };
+		88ED11142333910600AC149D /* allFramesCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = allFramesCell.xib; sourceTree = "<group>"; };
+		88EE7013232BA87800F5282A /* inEdit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = inEdit.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		88EE7016232BA87800F5282A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		88EE7018232BA87800F5282A /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
+		88EE701B232BA87800F5282A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		88EE701D232BA87800F5282A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		88EE7020232BA87800F5282A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		88EE7022232BA87800F5282A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		93C356B073DF1171C146DB1B /* Pods-CollageMaker.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CollageMaker.release.xcconfig"; path = "Target Support Files/Pods-CollageMaker/Pods-CollageMaker.release.xcconfig"; sourceTree = "<group>"; };
+		A40EF78134D1354D63E20DAC /* Pods_CollageMaker.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CollageMaker.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		88EE7010232BA87800F5282A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				10DB4961A6E7AA4609523E2D /* Pods_CollageMaker.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2843A62325EEC41A000C5B90 /* A4WPurchaseManager */ = {
+			isa = PBXGroup;
+			children = (
+				2843A62425EEC41A000C5B90 /* A4WPurchaseViewController.xib */,
+				2843A62525EEC41A000C5B90 /* A4WPurchaseManager.swift */,
+				2843A62625EEC41A000C5B90 /* A4WPurchaseViewController.swift */,
+			);
+			path = A4WPurchaseManager;
+			sourceTree = "<group>";
+		};
+		37DB2EAD2C0EE0F1A4631272 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A40EF78134D1354D63E20DAC /* Pods_CollageMaker.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		46D3B004E12828E82BC8E938 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0FE3C98E9AF2E406AEDBE250 /* Pods-CollageMaker.debug.xcconfig */,
+				93C356B073DF1171C146DB1B /* Pods-CollageMaker.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		88EBE5DF232CC95A006872EA /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				88ED11132333910600AC149D /* allFramesCell.swift */,
+				88ED11142333910600AC149D /* allFramesCell.xib */,
+				88ED110F2333863400AC149D /* MainStickerCell.swift */,
+				88ED11102333863400AC149D /* MainStickerCell.xib */,
+				88ED110B233385BF00AC149D /* StickerCell.swift */,
+				88ED110C233385BF00AC149D /* StickerCell.xib */,
+				88ED1103233382EF00AC149D /* FilterCell.swift */,
+				88ED1104233382EF00AC149D /* FilterCell.xib */,
+				88ED1101233382EF00AC149D /* FramesCell.swift */,
+				88ED1102233382EF00AC149D /* FramesCell.xib */,
+				88ED10FD233382D600AC149D /* SelectItemCell.swift */,
+				88ED10FE233382D600AC149D /* SelectItemCell.xib */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		88ED109623336D2300AC149D /* Library */ = {
+			isa = PBXGroup;
+			children = (
+				88ED109723336D2300AC149D /* StickerView */,
+				88ED109923336D2300AC149D /* JLImageView */,
+				88ED109F23336D2300AC149D /* AnimatedButton */,
+			);
+			path = Library;
+			sourceTree = "<group>";
+		};
+		88ED109723336D2300AC149D /* StickerView */ = {
+			isa = PBXGroup;
+			children = (
+				88ED109823336D2300AC149D /* StickerView.swift */,
+			);
+			path = StickerView;
+			sourceTree = "<group>";
+		};
+		88ED109923336D2300AC149D /* JLImageView */ = {
+			isa = PBXGroup;
+			children = (
+				88ED109A23336D2300AC149D /* JLStickerImageView.swift */,
+				88ED109B23336D2300AC149D /* JLStickerLabelView.swift */,
+				88ED109C23336D2300AC149D /* JLAttributedTextView.swift */,
+				88ED109D23336D2300AC149D /* CalcuteFunctions.swift */,
+				88ED109E23336D2300AC149D /* adjustToFitFontOrWidth.swift */,
+			);
+			path = JLImageView;
+			sourceTree = "<group>";
+		};
+		88ED109F23336D2300AC149D /* AnimatedButton */ = {
+			isa = PBXGroup;
+			children = (
+				88ED10A023336D2300AC149D /* PressButton.m */,
+				88ED10A123336D2300AC149D /* SelectionButton.m */,
+				88ED10A223336D2300AC149D /* FamButton.m */,
+				88ED10A323336D2300AC149D /* MagnificationButton.h */,
+				88ED10A423336D2300AC149D /* SelectionButton.h */,
+				88ED10A523336D2300AC149D /* PressButton.h */,
+				88ED10A623336D2300AC149D /* MagnificationButton.m */,
+				88ED10A723336D2300AC149D /* FamButton.h */,
+			);
+			path = AnimatedButton;
+			sourceTree = "<group>";
+		};
+		88ED10B223336D3600AC149D /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				88ED10B323336D3600AC149D /* Font */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		88ED10B323336D3600AC149D /* Font */ = {
+			isa = PBXGroup;
+			children = (
+				88ED10B423336D3600AC149D /* Adine Kirnberg.ttf */,
+				88ED10B523336D3600AC149D /* champignonaltswash.ttf */,
+				88ED10B623336D3600AC149D /* Advertising Script Monoline Trial.ttf */,
+				88ED10B723336D3600AC149D /* AguafinaScript-Regular.ttf */,
+				88ED10B823336D3600AC149D /* Allura-Regular.ttf */,
+				88ED10B923336D3600AC149D /* Script Writing.ttf */,
+				88ED10BA23336D3600AC149D /* waltograph42.otf */,
+				88ED10BB23336D3600AC149D /* AlexBrush-Regular.ttf */,
+				88ED10BC23336D3600AC149D /* akaDora.otf */,
+				88ED10BD23336D3600AC149D /* Bucanera-font-FFP.ttf */,
+				88ED10BE23336D3600AC149D /* Serling Script Regular.otf */,
+				88ED10BF23336D3600AC149D /* QUIGLEYW.ttf */,
+				88ED10C023336D3600AC149D /* VTC-BadTattooHandOne.otf */,
+				88ED10C123336D3600AC149D /* Granada Blues Personal Use.ttf */,
+				88ED10C223336D3600AC149D /* Ginga.ttf */,
+				88ED10C323336D3600AC149D /* LittleLordFontleroyNF.ttf */,
+				88ED10C423336D3600AC149D /* The Heart of Everything Demo.ttf */,
+				88ED10C523336D3600AC149D /* Playball-Regular.ttf */,
+				88ED10C623336D3600AC149D /* Mf Gradient Goddess.ttf */,
+				88ED10C723336D3600AC149D /* Dohearts.otf */,
+				88ED10C823336D3600AC149D /* PlumScript.ttf */,
+				88ED10C923336D3600AC149D /* Variane Script.ttf */,
+				88ED10CA23336D3600AC149D /* Alleana Script.otf */,
+				88ED10CB23336D3600AC149D /* Arizonia-Regular.ttf */,
+				88ED10CC23336D3600AC149D /* Enjoy Personal Use.otf */,
+				88ED10CD23336D3600AC149D /* VTKS SummerLAnd.ttf */,
+				88ED10CE23336D3600AC149D /* alsscrp.ttf */,
+				88ED10CF23336D3600AC149D /* Montez-Regular.ttf */,
+				88ED10D023336D3600AC149D /* Advertising Script Bold Trial.ttf */,
+				88ED10D123336D3600AC149D /* Pretty Girls Script Demo.ttf */,
+				88ED10D223336D3600AC149D /* a Theme for murder.ttf */,
+				88ED10D323336D3600AC149D /* Miama.ttf */,
+			);
+			path = Font;
+			sourceTree = "<group>";
+		};
+		88ED10F423336D4400AC149D /* TblCell */ = {
+			isa = PBXGroup;
+			children = (
+				88ED10F523336D4400AC149D /* tblStyleCell.swift */,
+				88ED10F623336D4400AC149D /* tblStyleCell.xib */,
+			);
+			path = TblCell;
+			sourceTree = "<group>";
+		};
+		88EE700A232BA87700F5282A = {
+			isa = PBXGroup;
+			children = (
+				88EBE5F1232CCBF7006872EA /* Collage.h */,
+				88EE7015232BA87800F5282A /* CollageMaker */,
+				88EE7014232BA87800F5282A /* Products */,
+				46D3B004E12828E82BC8E938 /* Pods */,
+				37DB2EAD2C0EE0F1A4631272 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		88EE7014232BA87800F5282A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				88EE7013232BA87800F5282A /* inEdit.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		88EE7015232BA87800F5282A /* CollageMaker */ = {
+			isa = PBXGroup;
+			children = (
+				2843A62325EEC41A000C5B90 /* A4WPurchaseManager */,
+				88ED10F423336D4400AC149D /* TblCell */,
+				88ED10B223336D3600AC149D /* Resources */,
+				88ED109623336D2300AC149D /* Library */,
+				88EE702A232BB32900F5282A /* Global */,
+				88EBE5DF232CC95A006872EA /* Cells */,
+				88EE702B232BB33400F5282A /* Controllers */,
+				88EE7016232BA87800F5282A /* AppDelegate.swift */,
+				88EE701A232BA87800F5282A /* Main.storyboard */,
+				88EE701D232BA87800F5282A /* Assets.xcassets */,
+				88EE701F232BA87800F5282A /* LaunchScreen.storyboard */,
+				88EE7022232BA87800F5282A /* Info.plist */,
+				045703CF25E9606A0098C7A5 /* GoogleService-Info.plist */,
+			);
+			path = CollageMaker;
+			sourceTree = "<group>";
+		};
+		88EE702A232BB32900F5282A /* Global */ = {
+			isa = PBXGroup;
+			children = (
+				88ED108F233366AD00AC149D /* Filters.swift */,
+				311A54362343450200DD19F3 /* Global.swift */,
+				311A54372343450200DD19F3 /* Helpers.swift */,
+				311A54382343450200DD19F3 /* SwiftyTimer.swift */,
+				88EC34A5232F540C0022014C /* PentagonView.swift */,
+			);
+			path = Global;
+			sourceTree = "<group>";
+		};
+		88EE702B232BB33400F5282A /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				0454A19925EA2AA300C625F0 /* Theme8WalkThroughViewController.swift */,
+				0454A19A25EA2AA300C625F0 /* Theme8WalkThroughViewController.xib */,
+				045703CA25E9557C0098C7A5 /* Theme12SignUpViewController.swift */,
+				045703C925E9557C0098C7A5 /* Theme12SignUpViewController.xib */,
+				88EE7018232BA87800F5282A /* HomeVC.swift */,
+				88ED10FB23336FC500AC149D /* LoadShapesVC.swift */,
+				88D17DC92336440C00268E37 /* PresentPhotoVC.swift */,
+				88ECD34B233CDA5400A8712E /* EditImageVC.swift */,
+				88ED108C2333665D00AC149D /* PresentTextVC.swift */,
+				88ED11092333853700AC149D /* StickersVC.swift */,
+				88DC7E0C2334D657006F3529 /* MyAlbumVC.swift */,
+				88DC7E0D2334D657006F3529 /* ShareVC.swift */,
+				045703CD25E955A00098C7A5 /* SingupController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		88EE7012232BA87800F5282A /* CollageMaker */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 88EE7025232BA87800F5282A /* Build configuration list for PBXNativeTarget "CollageMaker" */;
+			buildPhases = (
+				16E1957E3422ACFCF38C84DA /* [CP] Check Pods Manifest.lock */,
+				88EE700F232BA87800F5282A /* Sources */,
+				88EE7010232BA87800F5282A /* Frameworks */,
+				88EE7011232BA87800F5282A /* Resources */,
+				2B1A461205325FA42FEE7EDA /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CollageMaker;
+			productName = CollageMaker;
+			productReference = 88EE7013232BA87800F5282A /* inEdit.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		88EE700B232BA87700F5282A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1020;
+				LastUpgradeCheck = 1020;
+				ORGANIZATIONNAME = iMac;
+				TargetAttributes = {
+					88EE7012232BA87800F5282A = {
+						CreatedOnToolsVersion = 10.2.1;
+					};
+				};
+			};
+			buildConfigurationList = 88EE700E232BA87700F5282A /* Build configuration list for PBXProject "inEdit" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 88EE700A232BA87700F5282A;
+			productRefGroup = 88EE7014232BA87800F5282A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				88EE7012232BA87800F5282A /* CollageMaker */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		88EE7011232BA87800F5282A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				88ED10EC23336D3600AC149D /* Enjoy Personal Use.otf in Resources */,
+				88ED11122333863400AC149D /* MainStickerCell.xib in Resources */,
+				88ED10D623336D3600AC149D /* Advertising Script Monoline Trial.ttf in Resources */,
+				88ED10DE23336D3600AC149D /* Serling Script Regular.otf in Resources */,
+				88ED10E023336D3600AC149D /* VTC-BadTattooHandOne.otf in Resources */,
+				88EE7021232BA87800F5282A /* LaunchScreen.storyboard in Resources */,
+				88ED10E523336D3600AC149D /* Playball-Regular.ttf in Resources */,
+				88ED11162333910600AC149D /* allFramesCell.xib in Resources */,
+				88ED1100233382D600AC149D /* SelectItemCell.xib in Resources */,
+				88EE701E232BA87800F5282A /* Assets.xcassets in Resources */,
+				88ED10F123336D3600AC149D /* Pretty Girls Script Demo.ttf in Resources */,
+				0454A19C25EA2AA300C625F0 /* Theme8WalkThroughViewController.xib in Resources */,
+				88ED110E233385BF00AC149D /* StickerCell.xib in Resources */,
+				88ED10D923336D3600AC149D /* Script Writing.ttf in Resources */,
+				88ED10E223336D3600AC149D /* Ginga.ttf in Resources */,
+				88EE701C232BA87800F5282A /* Main.storyboard in Resources */,
+				88ED10EF23336D3600AC149D /* Montez-Regular.ttf in Resources */,
+				88ED10F223336D3600AC149D /* a Theme for murder.ttf in Resources */,
+				88ED10F823336D4400AC149D /* tblStyleCell.xib in Resources */,
+				88ED10ED23336D3600AC149D /* VTKS SummerLAnd.ttf in Resources */,
+				88ED10DA23336D3600AC149D /* waltograph42.otf in Resources */,
+				88ED10EE23336D3600AC149D /* alsscrp.ttf in Resources */,
+				88ED10E423336D3600AC149D /* The Heart of Everything Demo.ttf in Resources */,
+				88ED10F323336D3600AC149D /* Miama.ttf in Resources */,
+				88ED10EA23336D3600AC149D /* Alleana Script.otf in Resources */,
+				88ED10D423336D3600AC149D /* Adine Kirnberg.ttf in Resources */,
+				88ED10F023336D3600AC149D /* Advertising Script Bold Trial.ttf in Resources */,
+				88ED10E723336D3600AC149D /* Dohearts.otf in Resources */,
+				88ED10D823336D3600AC149D /* Allura-Regular.ttf in Resources */,
+				88ED10DD23336D3600AC149D /* Bucanera-font-FFP.ttf in Resources */,
+				88ED10E623336D3600AC149D /* Mf Gradient Goddess.ttf in Resources */,
+				88ED10E923336D3600AC149D /* Variane Script.ttf in Resources */,
+				045703CB25E9557C0098C7A5 /* Theme12SignUpViewController.xib in Resources */,
+				88ED1108233382EF00AC149D /* FilterCell.xib in Resources */,
+				88ED10D723336D3600AC149D /* AguafinaScript-Regular.ttf in Resources */,
+				88ED10E323336D3600AC149D /* LittleLordFontleroyNF.ttf in Resources */,
+				88ED10DB23336D3600AC149D /* AlexBrush-Regular.ttf in Resources */,
+				88ED10E823336D3600AC149D /* PlumScript.ttf in Resources */,
+				2843A62725EEC41A000C5B90 /* A4WPurchaseViewController.xib in Resources */,
+				88ED10D523336D3600AC149D /* champignonaltswash.ttf in Resources */,
+				88ED10EB23336D3600AC149D /* Arizonia-Regular.ttf in Resources */,
+				88ED10DC23336D3600AC149D /* akaDora.otf in Resources */,
+				88ED10E123336D3600AC149D /* Granada Blues Personal Use.ttf in Resources */,
+				045703D025E9606A0098C7A5 /* GoogleService-Info.plist in Resources */,
+				88ED1106233382EF00AC149D /* FramesCell.xib in Resources */,
+				88ED10DF23336D3600AC149D /* QUIGLEYW.ttf in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		16E1957E3422ACFCF38C84DA /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CollageMaker-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2B1A461205325FA42FEE7EDA /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CollageMaker/Pods-CollageMaker-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CollageMaker/Pods-CollageMaker-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-CollageMaker/Pods-CollageMaker-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		88EE700F232BA87800F5282A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				88ED10AE23336D2300AC149D /* PressButton.m in Sources */,
+				88ED1093233366AD00AC149D /* Filters.swift in Sources */,
+				88ED10F723336D4400AC149D /* tblStyleCell.swift in Sources */,
+				88ED1107233382EF00AC149D /* FilterCell.swift in Sources */,
+				88ED10A923336D2300AC149D /* JLStickerImageView.swift in Sources */,
+				88ED10FC23336FC500AC149D /* LoadShapesVC.swift in Sources */,
+				88ED11152333910600AC149D /* allFramesCell.swift in Sources */,
+				88EC34A6232F540C0022014C /* PentagonView.swift in Sources */,
+				88EE7019232BA87800F5282A /* HomeVC.swift in Sources */,
+				88ED11112333863400AC149D /* MainStickerCell.swift in Sources */,
+				88ED10AB23336D2300AC149D /* JLAttributedTextView.swift in Sources */,
+				88ED10AF23336D2300AC149D /* SelectionButton.m in Sources */,
+				2843A62925EEC41A000C5B90 /* A4WPurchaseViewController.swift in Sources */,
+				2843A62825EEC41A000C5B90 /* A4WPurchaseManager.swift in Sources */,
+				88ED110D233385BF00AC149D /* StickerCell.swift in Sources */,
+				311A543A2343450200DD19F3 /* Helpers.swift in Sources */,
+				88DC7E0F2334D657006F3529 /* ShareVC.swift in Sources */,
+				88ED10AA23336D2300AC149D /* JLStickerLabelView.swift in Sources */,
+				311A54392343450200DD19F3 /* Global.swift in Sources */,
+				88D17DCA2336440C00268E37 /* PresentPhotoVC.swift in Sources */,
+				045703CE25E955A00098C7A5 /* SingupController.swift in Sources */,
+				88ED10B123336D2300AC149D /* MagnificationButton.m in Sources */,
+				88EE7017232BA87800F5282A /* AppDelegate.swift in Sources */,
+				88ED10A823336D2300AC149D /* StickerView.swift in Sources */,
+				045703CC25E9557C0098C7A5 /* Theme12SignUpViewController.swift in Sources */,
+				88DC7E0E2334D657006F3529 /* MyAlbumVC.swift in Sources */,
+				88ED110A2333853700AC149D /* StickersVC.swift in Sources */,
+				88ED1105233382EF00AC149D /* FramesCell.swift in Sources */,
+				0454A19B25EA2AA300C625F0 /* Theme8WalkThroughViewController.swift in Sources */,
+				88ED10AD23336D2300AC149D /* adjustToFitFontOrWidth.swift in Sources */,
+				88ED10B023336D2300AC149D /* FamButton.m in Sources */,
+				88ED108D2333665D00AC149D /* PresentTextVC.swift in Sources */,
+				88ED10FF233382D600AC149D /* SelectItemCell.swift in Sources */,
+				88ED10AC23336D2300AC149D /* CalcuteFunctions.swift in Sources */,
+				88ECD34C233CDA5400A8712E /* EditImageVC.swift in Sources */,
+				311A543B2343450200DD19F3 /* SwiftyTimer.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		88EE701A232BA87800F5282A /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				88EE701B232BA87800F5282A /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		88EE701F232BA87800F5282A /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				88EE7020232BA87800F5282A /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		88EE7023232BA87800F5282A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		88EE7024232BA87800F5282A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		88EE7026232BA87800F5282A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0FE3C98E9AF2E406AEDBE250 /* Pods-CollageMaker.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1.3;
+				DEVELOPMENT_TEAM = C6BXEWKJ76;
+				INFOPLIST_FILE = "$(SRCROOT)/CollageMaker/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.photocollagemaker;
+				PRODUCT_NAME = inEdit;
+				SWIFT_OBJC_BRIDGING_HEADER = Collage.h;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		88EE7027232BA87800F5282A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 93C356B073DF1171C146DB1B /* Pods-CollageMaker.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1.3;
+				DEVELOPMENT_TEAM = C6BXEWKJ76;
+				INFOPLIST_FILE = "$(SRCROOT)/CollageMaker/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.photocollagemaker;
+				PRODUCT_NAME = inEdit;
+				SWIFT_OBJC_BRIDGING_HEADER = Collage.h;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		88EE700E232BA87700F5282A /* Build configuration list for PBXProject "inEdit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				88EE7023232BA87800F5282A /* Debug */,
+				88EE7024232BA87800F5282A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		88EE7025232BA87800F5282A /* Build configuration list for PBXNativeTarget "CollageMaker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				88EE7026232BA87800F5282A /* Debug */,
+				88EE7027232BA87800F5282A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 88EE700B232BA87700F5282A /* Project object */;
+}
