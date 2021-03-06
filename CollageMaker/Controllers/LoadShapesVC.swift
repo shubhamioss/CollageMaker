@@ -79,7 +79,10 @@ class LoadShapesVC: UIViewController,UICollectionViewDelegate,UICollectionViewDa
             
         }
         let buttonTwo = DefaultButton(title: "Buy Coins", dismissOnTap: false) {
-            self.coinsShop()
+            self.dismiss(animated: true) {
+                self.coinsShop()
+            }
+            
         }
         popup.addButtons([buttonOne, buttonTwo])
         self.present(popup, animated: true, completion: nil)

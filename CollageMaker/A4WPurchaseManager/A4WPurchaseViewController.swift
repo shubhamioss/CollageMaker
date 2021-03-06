@@ -7,10 +7,13 @@
 //
 
 import UIKit
+import Firebase
+import FirebaseDatabase
 
 // This class represents the in-app purchase controller
 class A4WPurchaseViewController: UIViewController {
     
+    var coinsCount : Int = 0
     private var productsRequestCompletionHandler: ProductsRequestCompletionHandler?
 
     @IBOutlet weak private var purchaseTitle: UILabel!
@@ -21,11 +24,15 @@ class A4WPurchaseViewController: UIViewController {
     @IBOutlet weak private var closeButton: UIButton!
     var didPurchaseProduct: ((_ success: Bool) -> Void)? = nil
     
+    @IBOutlet var buyCoinsBtnOne: UIButton!
+    @IBOutlet var buyCoinsBtnTwo: UIButton!
+    @IBOutlet var buyCoinsBtnThree: UIButton!
+    @IBOutlet var buyCoinsBtnFour: UIButton!
+    @IBOutlet var buyCointBtnFive: UIButton!
     /// Initial logic when this screen loads
     override func viewDidLoad() {
         super.viewDidLoad()
         setupRoundedCornerButtons()
-        setupLabelsContent()
         
         let defaults = UserDefaults.standard
 
@@ -35,48 +42,112 @@ class A4WPurchaseViewController: UIViewController {
         {setupLabelsContentOne()}else
         {setupLabelsContent()}
         
+        fetchCurrentUserDocument()
+        
     }
         
     /// Setup rounded corners for close and buy buttons
     private func setupRoundedCornerButtons() {
         closeButton.layer.cornerRadius = 12.5
-        buyProductButton.layer.cornerRadius = 10
-        buyProductButtonNew.layer.cornerRadius = 10
+        buyCoinsBtnOne.layer.cornerRadius = 10
+        buyCoinsBtnTwo.layer.cornerRadius = 10
+        buyCoinsBtnThree.layer.cornerRadius = 10
+        buyCoinsBtnFour.layer.cornerRadius = 10
+        buyCointBtnFive.layer.cornerRadius = 10
+
 
     }
     
     /// Setup content for all labels
     private func setupLabelsContent() {
-        purchaseTitle.text = "PRO Version"
-        purchaseDescription.text = "- Unlock all templates\n- Unlock all Hashtags\n- Unlock All Trending Grids\n- Remove all ads\n\n\n3-Days Free Trial after that"
-        legalDisclaimer.text = "subscription automatically renews for the same price and duration period as the original one month package unless auto-renew is turned off at least 24-hours before the end of the current period .You may cancel a subscription during its free 3days period via the subscription setting through your iTunes account. This must be done 24 hours before the end of the subscription period to avoid being charged. Please visit http://support.apple.com/kb/ht4098 for more information"
         
-        let a = UserDefaults.standard.string(forKey: "mainCurrency")
-        let b = UserDefaults.standard.string(forKey: "mainPrice")
-        let first = "then " + a! + " " + b! + "/Month, Cancel Anytime."
+        let a = UserDefaults.standard.string(forKey: "firstCoinsCurrency")
+                  let b = UserDefaults.standard.string(forKey: "firstCoinsPrice")
+                  let first = "  " + a! + "" + b! + " - 100000Coins "
+                  
+                  let c = UserDefaults.standard.string(forKey: "secondCoinsCurrency")
+                  let d = UserDefaults.standard.string(forKey: "secondCoinsPrice")
+                  let second = "  " + c! + "" + d! + " - 10000Coins"
+                  
+                  
+                  let e = UserDefaults.standard.string(forKey: "thirdCoinsCurrency")
+                  let f = UserDefaults.standard.string(forKey: "thirdCoinsPrice")
+                  let third = "  " + e! + "" + f! + " - 1000Coins"
+                  
+                  let i = UserDefaults.standard.string(forKey: "fourCoinsCurrency")
+                  let j = UserDefaults.standard.string(forKey: "fourCoinsPrice")
+                  let fourth = "  " + i! + "" + j! + " - 50000Coins"
+                  
+                  let k = UserDefaults.standard.string(forKey: "fiveCoinsCurrency")
+                  let l = UserDefaults.standard.string(forKey: "fiveCoinsPrice")
+                  let five = "  " + k! + "" + l! + " - 200Coins"
         
-        let c = UserDefaults.standard.string(forKey: "mainCurrencyone")
-        let d = UserDefaults.standard.string(forKey: "mainPriceone")
-        let second = "then " + c! + " " + d! + "/Week, Cancel Anytime."
-        
-        buyProductButton .setTitle(first, for: .normal)
-        buyProductButtonNew .setTitle(second, for: .normal)
+        buyCoinsBtnOne .setTitle(first, for: .normal)
+        buyCoinsBtnTwo .setTitle(second, for: .normal)
+        buyCoinsBtnThree .setTitle(third, for: .normal)
+        buyCoinsBtnFour .setTitle(fourth, for: .normal)
+        buyCointBtnFive .setTitle(five, for: .normal)
         
     }
     
     
     private func setupLabelsContentOne() {
-        purchaseTitle.text = "PRO Version"
-        purchaseDescription.text = "- Unlock all templates\n- Unlock all Hashtags\n- Unlock All Trending Grids\n- Explore Yourself\n- Unlimited Profile Visit\n- Remove all ads\n\n\n3-Days Free Trial after that"
-        legalDisclaimer.text = "subscription automatically renews for the same price and duration period as the original one month package unless auto-renew is turned off at least 24-hours before the end of the current period .You may cancel a subscription during its free 3days period via the subscription setting through your iTunes account. This must be done 24 hours before the end of the subscription period to avoid being charged. Please visit http://support.apple.com/kb/ht4098 for more information"
         
-        let a = UserDefaults.standard.string(forKey: "mainCurrency")
-        let b = UserDefaults.standard.string(forKey: "mainPrice")
-        let first = "then " + a! + " " + b! + "/Month, Cancel Anytime."
-        
-        buyProductButton .setTitle(first, for: .normal)
+         let a = UserDefaults.standard.string(forKey: "firstCoinsCurrency")
+            let b = UserDefaults.standard.string(forKey: "firstCoinsPrice")
+            let first = "  " + a! + "" + b! + " - 100000Coins "
+            
+            let c = UserDefaults.standard.string(forKey: "secondCoinsCurrency")
+            let d = UserDefaults.standard.string(forKey: "secondCoinsPrice")
+            let second = "  " + c! + "" + d! + " - 10000Coins"
+            
+            
+            let e = UserDefaults.standard.string(forKey: "thirdCoinsCurrency")
+            let f = UserDefaults.standard.string(forKey: "thirdCoinsPrice")
+            let third = "  " + e! + "" + f! + " - 1000Coins"
+            
+            let i = UserDefaults.standard.string(forKey: "fourCoinsCurrency")
+            let j = UserDefaults.standard.string(forKey: "fourCoinsPrice")
+            let fourth = "  " + i! + "" + j! + " - 50000Coins"
+            
+            let k = UserDefaults.standard.string(forKey: "fiveCoinsCurrency")
+            let l = UserDefaults.standard.string(forKey: "fiveCoinsPrice")
+            let five = "  " + k! + "" + l! + " - 200Coins"
+              
+              buyCoinsBtnOne .setTitle(first, for: .normal)
+              buyCoinsBtnTwo .setTitle(second, for: .normal)
+              buyCoinsBtnThree .setTitle(third, for: .normal)
+              buyCoinsBtnFour .setTitle(fourth, for: .normal)
+              buyCointBtnFive .setTitle(five, for: .normal)
         
     }
+    
+    func fetchCurrentUserDocument(){
+        let db = Firestore.firestore()
+        
+        let defaults = UserDefaults.standard
+        let currentUsername = defaults.value(forKey: "usernameId")
+        let docRef = db.collection("EditUserBase").document("\(currentUsername ?? "shubham456")")
+
+        docRef.getDocument { (document, error) in
+            if let document = document, document.exists {
+                self.coinsCount = document["Coins"] as! Int
+            } else {
+                print("Document does not exist")
+            }
+        }
+    }
+    
+    func updateCoins(coins: Int){
+         let db = Firestore.firestore()
+          
+          let tempCoint = self.coinsCount + coins
+
+          let defaults = UserDefaults.standard
+          let currentUsername = defaults.value(forKey: "usernameId")
+          db.collection("EditUserBase").document("\(currentUsername ?? "shubham456")").updateData(["Coins":tempCoint])
+          
+      }
     
     /// Buy PRO Version
     @IBAction func buyPROVersion(_ sender: UIButton) {
@@ -84,7 +155,8 @@ class A4WPurchaseViewController: UIViewController {
             self.dismiss(animated: true) {
                 self.didPurchaseProduct?(success)
                 
-               // UserDefaults.standard.set("true", forKey: "subscriptionKey")
+                self.updateCoins(coins: 100000)
+                // UserDefaults.standard.set("true", forKey: "subscriptionKey")
             }
         }
     }
@@ -93,9 +165,40 @@ class A4WPurchaseViewController: UIViewController {
             self.dismiss(animated: true) {
                 self.didPurchaseProduct?(success)
                 
-               // UserDefaults.standard.set("true", forKey: "subscriptionKey")
+                self.updateCoins(coins: 10000)
             }
         }
+    }
+    
+    @IBAction func buyProductThreeBtnAction(_ sender: UIButton) {
+        A4WPurchaseManager.buyProVersionTwo { (success) in
+                   self.dismiss(animated: true) {
+                       self.didPurchaseProduct?(success)
+                       self.updateCoins(coins: 1000)
+                      // UserDefaults.standard.set("true", forKey: "subscriptionKey")
+                   }
+               }
+    }
+    
+    @IBAction func buyProductFourBtnAction(_ sender: UIButton) {
+        A4WPurchaseManager.buyProVersionThree { (success) in
+                          self.dismiss(animated: true) {
+                              self.didPurchaseProduct?(success)
+                              self.updateCoins(coins: 50000)
+                             // UserDefaults.standard.set("true", forKey: "subscriptionKey")
+                          }
+                      }
+    }
+    
+    @IBAction func buyProductFiveBtnAction(_ sender: UIButton) {
+        
+        A4WPurchaseManager.buyProVersionfour { (success) in
+                          self.dismiss(animated: true) {
+                              self.didPurchaseProduct?(success)
+                              self.updateCoins(coins: 200)
+                             // UserDefaults.standard.set("true", forKey: "subscriptionKey")
+                          }
+                      }
     }
     
     /// Restore purchases
@@ -109,7 +212,7 @@ class A4WPurchaseViewController: UIViewController {
     
     /// Open Terms of Use URL
     @IBAction func seeTermsOfUse(_ sender: UIButton) {
-        UIApplication.shared.open(URL(string: "http://igtags.nl/TermsBesties")!, options: [:], completionHandler: nil)
+
     }
     
     /// Open Privacy Policy URL

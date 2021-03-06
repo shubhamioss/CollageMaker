@@ -93,6 +93,7 @@ class Theme8WalkThroughViewController: UIViewController,iCarouselDelegate,iCarou
       
             let storyBoard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
             let newViewController = storyBoard.instantiateViewController(withIdentifier: "LoadShapesVC") as! LoadShapesVC
+            newViewController.modalPresentationStyle = .fullScreen
             self.present(newViewController, animated: true, completion: nil)
             
         }else if(self.lblTitle.text! == "Photo Editor"){

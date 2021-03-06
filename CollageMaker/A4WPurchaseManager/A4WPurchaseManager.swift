@@ -16,11 +16,14 @@ public typealias ProductPurchaseCompletionHandler = (_ success: Bool, _ productI
 
 /// IMPORTANT: Replace the proVersion identifier with the one from App Store connect
 public struct InAppProducts {
-    public static let proVersionone = ""
-    public static let proVersiontwo = ""
+    public static let proVersionone = "coins200"
+    public static let proVersiontwo = "1000coins"
+    public static let proVersionthree = "10000coins"
+    public static let proVersionfour = "50000coins"
+    public static let proVersionfive = "100000coins"
 
     public static let store = A4WPurchaseManager(productIDs: InAppProducts.productIDs)
-    public static let productIDs: Set<ProductID> = [InAppProducts.proVersionone,InAppProducts.proVersiontwo]
+    public static let productIDs: Set<ProductID> = [InAppProducts.proVersionone,InAppProducts.proVersiontwo,InAppProducts.proVersionthree,InAppProducts.proVersionfour,InAppProducts.proVersionfive]
 }
 
 /// Resource name for product id
@@ -81,6 +84,30 @@ public class A4WPurchaseManager: NSObject {
     }
     
     static func buyProVersionOne(completion: @escaping (_ success: Bool) -> Void) {
+        if let firstProduct = A4WPurchaseManager.inAppProducts?[1] {
+            A4WPurchaseManager.shared.buyProduct(firstProduct) { (didPurchase, _) in
+                completion(didPurchase)
+            }
+        } else { completion(false) }
+    }
+    
+    
+    static func buyProVersionTwo(completion: @escaping (_ success: Bool) -> Void) {
+        if let firstProduct = A4WPurchaseManager.inAppProducts?[2] {
+            A4WPurchaseManager.shared.buyProduct(firstProduct) { (didPurchase, _) in
+                completion(didPurchase)
+            }
+        } else { completion(false) }
+    }
+    static func buyProVersionThree(completion: @escaping (_ success: Bool) -> Void) {
+        if let firstProduct = A4WPurchaseManager.inAppProducts?[3] {
+            A4WPurchaseManager.shared.buyProduct(firstProduct) { (didPurchase, _) in
+                completion(didPurchase)
+            }
+        } else { completion(false) }
+    }
+    
+    static func buyProVersionfour(completion: @escaping (_ success: Bool) -> Void) {
         if let firstProduct = A4WPurchaseManager.inAppProducts?.last {
             A4WPurchaseManager.shared.buyProduct(firstProduct) { (didPurchase, _) in
                 completion(didPurchase)
@@ -179,11 +206,20 @@ extension A4WPurchaseManager: SKProductsRequestDelegate {
             currencyFormatter.locale = Locale.current
             print("Found product: \(p.priceLocale.currencyCode!) \(p.price)")
             
-            UserDefaults.standard.set("\(products.first?.priceLocale.currencyCode! ?? "")", forKey: "mainCurrency")
-            UserDefaults.standard.set((products.first?.price), forKey: "mainPrice")
+            UserDefaults.standard.set("\(products.first?.priceLocale.currencyCode! ?? "")", forKey: "firstCoinsCurrency")
+            UserDefaults.standard.set((products.first?.price), forKey: "firstCoinsPrice")
             
-            UserDefaults.standard.set("\(products.last?.priceLocale.currencyCode! ?? "")", forKey: "mainCurrencyone")
-            UserDefaults.standard.set((products.last?.price), forKey: "mainPriceone")
+            UserDefaults.standard.set("\(products[1].priceLocale.currencyCode! )", forKey: "secondCoinsCurrency")
+            UserDefaults.standard.set((products[1].price), forKey: "secondCoinsPrice")
+            
+            UserDefaults.standard.set("\(products[2].priceLocale.currencyCode! )", forKey: "thirdCoinsCurrency")
+            UserDefaults.standard.set((products[2].price), forKey: "thirdCoinsPrice")
+            
+            UserDefaults.standard.set("\(products[3].priceLocale.currencyCode! )", forKey: "fourCoinsCurrency")
+            UserDefaults.standard.set((products[3].price), forKey: "fourCoinsPrice")
+            
+            UserDefaults.standard.set("\(products[4].priceLocale.currencyCode! )", forKey: "fiveCoinsCurrency")
+            UserDefaults.standard.set((products[4].price), forKey: "fiveCoinsPrice")
         }
     }
     

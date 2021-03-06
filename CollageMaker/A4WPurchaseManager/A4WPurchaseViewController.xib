@@ -10,8 +10,11 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="A4WPurchaseViewController" customModule="inEdit" customModuleProvider="target">
             <connections>
-                <outlet property="buyProductButton" destination="Tee-ru-f0c" id="YMY-hS-4jM"/>
-                <outlet property="buyProductButtonNew" destination="Rss-RW-7DB" id="6iT-QU-UB3"/>
+                <outlet property="buyCoinsBtnFour" destination="g8n-XL-XyD" id="Ntl-P7-D1d"/>
+                <outlet property="buyCoinsBtnOne" destination="Rss-RW-7DB" id="XSj-x4-roV"/>
+                <outlet property="buyCoinsBtnThree" destination="exe-b0-3ld" id="rPx-qw-eW2"/>
+                <outlet property="buyCoinsBtnTwo" destination="Tee-ru-f0c" id="x0A-w2-XH9"/>
+                <outlet property="buyCointBtnFive" destination="REw-Nt-52t" id="Y95-DG-FHl"/>
                 <outlet property="closeButton" destination="GP3-Qf-zWf" id="nQC-lW-Rvy"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
@@ -23,68 +26,65 @@
             <subviews>
                 <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="3BG-N7-KY0">
                     <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                     <subviews>
                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="6143" translatesAutoresizingMaskIntoConstraints="NO" id="3uO-pm-ciW">
                             <rect key="frame" x="0.0" y="0.0" width="414" height="214"/>
-                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                         </imageView>
-                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tee-ru-f0c">
-                            <rect key="frame" x="20" y="309.5" width="374" height="47"/>
-                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="leading" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tee-ru-f0c">
+                            <rect key="frame" x="20" y="310" width="374" height="47"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                             <color key="backgroundColor" systemColor="systemTealColor" red="0.35294117650000001" green="0.7843137255" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
                             <connections>
-                                <action selector="buyPROVersion:" destination="-1" eventType="touchUpInside" id="ZFx-7D-agj"/>
+                                <action selector="buyProductBtnNewAction:" destination="-1" eventType="touchUpInside" id="OHg-5k-2Po"/>
                             </connections>
                         </button>
-                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rss-RW-7DB">
+                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="leading" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rss-RW-7DB">
                             <rect key="frame" x="20" y="244" width="374" height="47"/>
-                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                             <color key="backgroundColor" systemColor="systemTealColor" red="0.35294117650000001" green="0.7843137255" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
                             <connections>
-                                <action selector="buyProductBtnNewAction:" destination="-1" eventType="touchUpInside" id="SWP-E7-fRd"/>
+                                <action selector="buyPROVersion:" destination="-1" eventType="touchUpInside" id="qXX-Pc-NoX"/>
                             </connections>
                         </button>
-                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="g8n-XL-XyD">
+                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="leading" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="g8n-XL-XyD">
                             <rect key="frame" x="20" y="444" width="374" height="47"/>
-                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                             <color key="backgroundColor" systemColor="systemTealColor" red="0.35294117650000001" green="0.7843137255" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
                             <connections>
-                                <action selector="buyPROVersion:" destination="-1" eventType="touchUpInside" id="j6r-VJ-VFM"/>
+                                <action selector="buyProductFourBtnAction:" destination="-1" eventType="touchUpInside" id="q4e-Lq-Ded"/>
                             </connections>
                         </button>
-                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="REw-Nt-52t">
+                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="leading" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="REw-Nt-52t">
                             <rect key="frame" x="20" y="509" width="374" height="47"/>
-                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                             <color key="backgroundColor" systemColor="systemTealColor" red="0.35294117650000001" green="0.7843137255" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
                             <connections>
-                                <action selector="buyPROVersion:" destination="-1" eventType="touchUpInside" id="kKC-Qv-lu5"/>
+                                <action selector="buyProductFiveBtnAction:" destination="-1" eventType="touchUpInside" id="qQ2-Qz-uvj"/>
                             </connections>
                         </button>
-                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="exe-b0-3ld">
+                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="leading" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="exe-b0-3ld">
                             <rect key="frame" x="20" y="379" width="374" height="47"/>
-                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                             <color key="backgroundColor" systemColor="systemTealColor" red="0.35294117650000001" green="0.7843137255" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
                             <connections>
-                                <action selector="buyProductBtnNewAction:" destination="-1" eventType="touchUpInside" id="MEx-sJ-Hu8"/>
+                                <action selector="buyProductThreeBtnAction:" destination="-1" eventType="touchUpInside" id="jWT-ld-e0d"/>
                             </connections>
                         </button>
                     </subviews>
                     <viewLayoutGuide key="contentLayoutGuide" id="yq7-1z-qcI"/>
                     <viewLayoutGuide key="frameLayoutGuide" id="TbE-O5-vnv"/>
                 </scrollView>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GP3-Qf-zWf">
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GP3-Qf-zWf">
                     <rect key="frame" x="20" y="64" width="25" height="25"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                     <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                    <constraints>
-                        <constraint firstAttribute="width" constant="25" id="29R-Bc-nrb"/>
-                        <constraint firstAttribute="height" constant="25" id="aDd-3M-ZAr"/>
-                    </constraints>
                     <fontDescription key="fontDescription" type="system" pointSize="19"/>
                     <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <inset key="contentEdgeInsets" minX="2" minY="2" maxX="2" maxY="2"/>
@@ -95,10 +95,6 @@
                 </button>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-            <constraints>
-                <constraint firstItem="GP3-Qf-zWf" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="20" id="URP-ps-yy0"/>
-                <constraint firstItem="GP3-Qf-zWf" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="XhH-4M-tlt"/>
-            </constraints>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <point key="canvasLocation" x="134.78260869565219" y="112.5"/>
         </view>
