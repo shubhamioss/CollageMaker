@@ -766,7 +766,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.photocollagemaker;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ICTMind.camerafiltercam;
 				PRODUCT_NAME = inEdit;
 				SWIFT_OBJC_BRIDGING_HEADER = Collage.h;
 				SWIFT_VERSION = 5.0;
@@ -788,7 +788,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.photocollagemaker;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ICTMind.camerafiltercam;
 				PRODUCT_NAME = inEdit;
 				SWIFT_OBJC_BRIDGING_HEADER = Collage.h;
 				SWIFT_VERSION = 5.0;
